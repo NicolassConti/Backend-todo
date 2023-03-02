@@ -9,7 +9,6 @@ app.use(express.json())
 
 app.use(todoroutes)
 
-app.use(Todosdb)
 
 db.authenticate()
     .then(() => {
@@ -28,7 +27,7 @@ db.sync()
     })
 
 app.get("/", (req, res) => {
-    res.send("Bienvenido a mi DB!")
+    res.send("Hello my DB")
 })
 
 
