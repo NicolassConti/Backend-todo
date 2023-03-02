@@ -1,7 +1,6 @@
 const express = require('express');
 const db = require('./utils/database');
 const todoroutes = require('./routes/todos.routes')
-const Todosdb = require('./models/models');
 
 const app = express();
 
